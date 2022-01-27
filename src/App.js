@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div>
-      cock an balls bbbabbbyyyyyy YURRRRRRRRRRRRRRRRRRRRRRR
+      
     </div>
   );
 }
