@@ -6,10 +6,14 @@ function Expenses(props) {
   return (
     <div>
       <div className="expenses">
-        {props.items.map ((expense) => (
-            <ExpenseItem
-
-            > </ExpenseItem>
+        {props.items.map((expense) => (
+          <ExpenseItem
+            onDeleteExpense={props.onDeleteExpense}
+            id={expense.id}
+            title={expense.title}
+            amount={expense.amount}
+            date={expense.date}
+          ></ExpenseItem>
         ))}
       </div>
     </div>
@@ -17,18 +21,3 @@ function Expenses(props) {
 }
 
 export default Expenses;
-
-// def add(a, b)
-//  c = a + b
-//  return c
-
-// React
-// def add(props)
-//  c = props.a + props.b
-//  return c
-
-// for i in range(...)
-
-//rfce
-
-
